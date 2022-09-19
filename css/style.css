@@ -35,6 +35,9 @@ body{
     margin: 0 auto;
 }
 
+h2{
+    font-size: 2rem;
+}
 /* ClASSI PER FLEX */
 .d-flex{
     display: flex;
@@ -168,6 +171,53 @@ header a {
     padding: 1em 0;
 }
 
+/* Quarta sezione */
+
+#features .container{
+    color: var(--white);
+}
+
+#features .text-center{
+    color: var(--white);
+}
+
+.feat-card{
+    background-color: var(--white);
+    border-radius: 40px;
+    color: var(--violet);
+    padding: 2em;
+    margin: 1em;
+}
+
+#features button{
+    background-color: var(--violet);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    padding: 1em 4em;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.feat-card h2, h3{
+    padding-bottom: 0.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 footer{
     background-color: var(--darkgrey);
@@ -210,6 +260,17 @@ footer{
         padding: 2em 0;
     }
 }
+
+/* Quarta sezione */
+    .features-cards{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .feat-card{
+        width: calc(33.33% - 2em);
+    }
+
+
 
 @media screen and (min-width: 992px){
 /* Seconda sezione */
