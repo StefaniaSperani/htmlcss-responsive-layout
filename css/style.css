@@ -86,15 +86,11 @@ header a {
     text-decoration: none;
 }
 
-.hamburger ul, button{
-    display: none;
-}
 
 .hamburger button{
     background-color: var(--white);
     color: var(--black);
     padding: 0.5em 1em;
-
 }
 
 /* main */
@@ -114,7 +110,7 @@ header a {
 }
 
 .card img{
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
     margin-bottom: -0.5em;
     padding-top: 2em;
@@ -368,6 +364,10 @@ footer .text-center{
     }
 }
 
+
+/* ############################################################# */
+
+
 @media screen and (min-width: 992px){
 
     .container{
@@ -376,6 +376,9 @@ footer .text-center{
 
 /* Nav bar */
     
+
+/* Prima sezione */
+
 
 /* Seconda sezione */
     #planning .container{
