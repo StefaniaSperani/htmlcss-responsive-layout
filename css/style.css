@@ -22,7 +22,7 @@ html{
 body{
     background-color: var(--white);
     font-family: 'PT Sans', sans-serif;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 }
 
 .container{
@@ -38,6 +38,17 @@ body{
 h2{
     font-size: 2rem;
 }
+
+button{
+    background-color: var(--violet);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    padding: 1em 4em;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
 /* ClASSI PER FLEX */
 .d-flex{
     display: flex;
@@ -157,8 +168,8 @@ header a {
 }
 
 .testimonials img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     padding: 1em;
 }
@@ -189,22 +200,40 @@ header a {
     margin: 1em;
 }
 
-#features button{
-    background-color: var(--violet);
-    color: var(--white);
-    border: none;
-    border-radius: 20px;
-    padding: 1em 4em;
-    text-align: center;
-    margin-top: 1.5em;
-}
-
 .feat-card h2, h3{
     padding-bottom: 0.8em;
 }
 
+/* Inizio quinta sezione */
+    #about-us h2, h3{
+        color: var(--violet);
+        padding: 1em 0;
+    }
 
+    .about-us, .about-img{
+        padding: 0 1em;
+    }
+    
+    .p1, .p2{
+        padding-bottom: 1em;
+    }
 
+    .about-img img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .about-img .fa-quote-left{
+        margin-left: -1em;
+        font-size: 3rem;
+        color: var(--violet);
+    }
+
+    .about-img button{
+        margin-bottom: 1em;
+        padding: 0.5em 1em;
+    }
 
 
 
@@ -259,7 +288,6 @@ footer{
         flex-direction: column;
         padding: 2em 0;
     }
-}
 
 /* Quarta sezione */
     .features-cards{
@@ -270,12 +298,21 @@ footer{
         width: calc(33.33% - 2em);
     }
 
-
+/* Quinta sezione */
+    .about-flex{
+        display: flex;
+        padding-top: 2rem;
+    }
+}
 
 @media screen and (min-width: 992px){
+
+    .container{
+        max-width: 980px;
+    }
 /* Seconda sezione */
     #planning .container{
-        max-width: 660px;
+        max-width: 760px;
     }
     .plans{
         display: flex;
@@ -286,4 +323,5 @@ footer{
     .app img{
         width: 70%;
     }
+
 }
