@@ -1,0 +1,121 @@
+/* Common */
+
+:root{
+    --lightblue: #0084FD;
+    --heavenly: #B5DDFF;
+    --violet: #9792E4;
+    --yellow: #FDC15F;
+    --darkgrey: #333333;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--white);
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ClASSI PER FLEX */
+.d-flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+
+
+.debug{
+    border: 1px solid black;
+    min-height: 50px;
+}
+/* Header */
+
+header{
+    background-color: var(--lightblue);
+    color: var(--white);
+    padding: 1rem 2rem;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+}
+
+.main-menu{
+    display: none;
+}
+
+header a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* main */
+#planning, #features, #get-started{
+    background-color: var(--violet);
+}
+
+#intro{
+    padding: 0 2em;
+}
+.card{
+    background-color: var(--heavenly);
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+    background-color: var(--darkgrey);
+}
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 750px;
+    }
+
+    #intro .cards{
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+
+    #intro .card{
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        width: calc(33.33% - 1.5rem);
+    }
+
+    #intro .card:first-child{
+        width: calc(66.66% - 1.5rem)
+    }
+}
