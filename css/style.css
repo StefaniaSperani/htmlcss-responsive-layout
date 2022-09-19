@@ -22,10 +22,16 @@ html{
 body{
     background-color: var(--white);
     font-family: 'PT Sans', sans-serif;
+    line-height: 2rem;
 }
 
 .container{
     max-width: 600px;
+    margin: 0 auto;
+}
+
+.container-small{
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -69,6 +75,8 @@ header a {
 }
 
 /* main */
+
+/* Prima sezione */
 #planning, #features, #get-started{
     background-color: var(--violet);
 }
@@ -81,13 +89,58 @@ header a {
     margin-bottom: 1.5rem;
 }
 
+/* Seconda sezione */
+#planning{
+    padding: 2rem;
+}
 
+.plans img{
+    width: 100%;
+    padding-top: 1em;
+}
+.app{
+    background-color: var(--white);
+    border-radius: 40px;
+}
 
+.plans i{
+    border-radius: 50%;
+    background-color: var(--violet);
+    margin: 1em auto;
+    padding: 1em;
+}
+.plans h2{
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
 
+.strategy{
+    color: var(--white);
+}
 
+.strategy p{
+    padding-bottom: 2em;
+}
 
+.app .text-center h2{
+    color: var(--black);
+}
+.text-center {
+    text-align: center;
+    padding: 1em;
+    color: var(--black);
+}
 
+/* Terza sezione */
+.text-center{
+    color: var(--black);
+    padding: 2em 0;
+}
 
+.text-center h2{
+    color: var(--violet);
+    padding: 1em 0;
+}
 
 
 /* Footer */
@@ -98,6 +151,7 @@ footer{
 
 /* RESPONSIVE */
 @media screen and (min-width: 768px){
+/* Prima sezione */
     .container{
         max-width: 750px;
     }
@@ -117,5 +171,24 @@ footer{
 
     #intro .card:first-child{
         width: calc(66.66% - 1.5rem)
+    }
+
+
+}
+
+@media screen and (min-width: 992px){
+/* Seconda sezione */
+    #planning .container{
+        max-width: 660px;
+    }
+    .plans{
+        display: flex;
+
+    }
+    .strategy img{
+        width: 100%;
+    }
+    .app img{
+        width: 70%;
     }
 }
