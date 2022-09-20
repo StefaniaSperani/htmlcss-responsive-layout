@@ -75,6 +75,7 @@ header{
     margin-bottom: 50px;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .main-menu{
@@ -87,10 +88,15 @@ header a {
 }
 
 
-.hamburger button{
+.btn-hamb{
     background-color: var(--white);
     color: var(--black);
     padding: 0.5em 1em;
+    display: none;
+}
+
+.hamburger ul{
+    display: none;
 }
 
 /* main */
@@ -105,6 +111,7 @@ header a {
 }
 .card{
     background-color: var(--heavenly);
+    border-radius: 20px;
     margin-bottom: 1.5rem;
     padding: 0 1em;
 }
@@ -203,6 +210,7 @@ header a {
     height: 200px;
     border-radius: 50%;
     padding: 1em;
+    margin: 1em 0;
 }
 
 .cit{
@@ -235,6 +243,10 @@ header a {
     padding-bottom: 0.8em;
 }
 
+.features-cards{
+    padding-bottom: 2em;
+}
+
 /* Inizio quinta sezione */
     #about-us h2, h3{
         color: var(--violet);
@@ -253,9 +265,11 @@ header a {
         width: 200px;
         height: 200px;
         border-radius: 50%;
+        position: relative;
     }
 
     .about-img .fa-quote-left{
+        position: absolute;
         margin-left: -1em;
         font-size: 3rem;
         color: var(--violet);
@@ -345,7 +359,7 @@ footer .text-center{
     .text-flex{
         display: flex;
         flex-direction: column;
-        padding: 2em 0;
+        padding: 3em 0;
     }
 
 /* Quarta sezione */
@@ -375,10 +389,34 @@ footer .text-center{
     }
 
 /* Nav bar */
-    
+
+    .hamburger, .btn-hamb{
+        display: flex;
+        align-items: center;
+    }
+    .hamburger ul{
+        display: block;
+        padding: 1em;
+    }
+
+    .btn-hamb{
+        display: block;
+        margin: 0;
+    }
+
+    .fa-bars{
+        display: none;
+    }
 
 /* Prima sezione */
-
+    .demo{
+        display: flex;
+    }
+    
+    .demo img{
+        width: 100%;
+        padding-top: 5rem;
+    }
 
 /* Seconda sezione */
     #planning .container{
@@ -398,5 +436,15 @@ footer .text-center{
         width: 60%;
         margin: 1em;
     }
+
+    .app h2{
+        font-size: 1.5em;
+    }
    
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
 }
