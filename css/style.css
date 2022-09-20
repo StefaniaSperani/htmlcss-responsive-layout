@@ -266,11 +266,13 @@ header a {
         height: 200px;
         border-radius: 50%;
         position: relative;
+        margin-top: 2.5em;
     }
 
     .about-img .fa-quote-left{
         position: absolute;
         margin-left: -1em;
+        margin-top: 1em;
         font-size: 3rem;
         color: var(--violet);
     }
@@ -360,6 +362,11 @@ footer .text-center{
         display: flex;
         flex-direction: column;
         padding: 3em 0;
+        padding-top: 4em;
+    }
+
+    .text-align{
+        text-align: initial;
     }
 
 /* Quarta sezione */
