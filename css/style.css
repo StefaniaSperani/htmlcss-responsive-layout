@@ -78,9 +78,6 @@ header{
     z-index: 1000;
 }
 
-.main-menu{
-    display: none;
-}
 
 header a {
     color: var(--white);
@@ -90,13 +87,31 @@ header a {
 
 .btn-hamb{
     background-color: var(--white);
-    color: var(--black);
     padding: 0.5em 1em;
     display: none;
 }
 
-.hamburger ul{
+.btn-hamb a{
+    color: var(--black);
+}
+
+.main-menu {
+    position: relative;
+}
+
+.main-menu ul{
+    position: absolute;
+    top: 20px;
+    right: 10px;
     display: none;
+    list-style: none;
+}
+
+
+.main-menu:hover ul{
+    display: block;
+    /* background-color: var(--white);
+    border: 1px solid var(--lightblue); */
 }
 
 /* main */
@@ -396,25 +411,35 @@ footer .text-center{
     }
 
 /* Nav bar */
-
-    .hamburger, .btn-hamb{
+    
+    .main-menu:hover ul{
         display: flex;
         align-items: center;
     }
-    .hamburger ul{
-        display: block;
+
+    .main-menu ul{
+        position: static;
+        width: auto;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    .main-menu li{
         padding: 1em;
     }
 
     .btn-hamb{
         display: block;
         margin: 0;
+        color: var(--black);
     }
 
     .fa-bars{
         display: none;
     }
 
+  
 /* Prima sezione */
     .demo{
         display: flex;
